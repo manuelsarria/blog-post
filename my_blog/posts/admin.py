@@ -5,5 +5,5 @@ from  posts.models import Post
 @admin.register(Post)
 
 class PostAdmin(admin.ModelAdmin):
-  pass
-
+  list_display = ['title', 'create_at']
+  
